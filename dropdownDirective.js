@@ -1,5 +1,5 @@
 e strict';
-angular.module('bokio.system')
+angular.module('myApp')
 .directive('dropdown', ['$document', function ($document) {
 	return {
 		restrict: 'A',
