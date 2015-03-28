@@ -1,4 +1,4 @@
-e strict';
+'use strict';
 angular.module('myApp')
 .directive('dropdown', ['$document', function ($document) {
 	return {
@@ -13,6 +13,7 @@ angular.module('myApp')
 
 				if (clickWasOutside) {
 					$scope.showDropdown = false;
+					$scope.$apply();
 				}
 			});
 
